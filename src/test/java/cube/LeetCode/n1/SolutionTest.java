@@ -21,8 +21,8 @@ public class SolutionTest {
             int[] test_data = generateUniqueArray(len);
             int target = generateTarget(test_data);
     
-            int[] expected = s1.slow_solution(test_data, target);
-            int[] actual = s1.fast_solution(test_data, target);
+            int[] expected = s1.slowSolution(test_data, target);
+            int[] actual = s1.fastSolution(test_data, target);
     
             assertEquals(
                 test_data[expected[0]] + test_data[expected[1]], 
