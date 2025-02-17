@@ -5,8 +5,8 @@ import java.util.HashMap;
 class Solution {
 
     public int[] twoSum(int[] nums, int target) {
-        // return slow_solution(nums, target);
-        return fast_solution(nums, target);
+        // return slowSolution(nums, target);
+        return fastSolution(nums, target);
     }
 
     /**
@@ -45,7 +45,7 @@ class Solution {
      * @throws IllegalArgumentException Если пара чисел не найдена (хотя задача
      *                                  гарантирует наличие решения).
      */
-    public int[] slow_solution(int[] nums, int target) {
+    public int[] slowSolution(int[] nums, int target) {
         int ii = -1, jj = -1; // Начальные индексы
         int len = nums.length;
 
@@ -98,7 +98,7 @@ class Solution {
      * @throws IllegalArgumentException Если пара чисел не найдена (хотя задача
      *                                  гарантирует наличие решения).
      */
-    public int[] fast_solution(int[] nums, int target) {
+    public int[] fastSolution(int[] nums, int target) {
         HashMap<Integer, Integer> hash = new HashMap<>();
 
         for (int i = 0; i < nums.length; ++i) {
